@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
+
+@theme {
+  --color-ink: #0c0c0c;
+  --color-mist: #d7e2ea;
+  --color-brand: #ff7a00;
+  --color-brand-deep: #ff3d00;
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  background: var(--color-ink);
+  color: var(--color-mist);
+  font-family: var(--font-sans);
+  word-break: keep-all;
+}
+
+.hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #bbccd7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.brand-heading {
+  background: linear-gradient(180deg, #ffb35c 0%, #ff7a00 55%, #ff3d00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.cta-gradient {
+  background: linear-gradient(123deg, #1f0a00 7%, #ff6a00 37%, #ff3d00 72%, #ffb000 100%);
+  box-shadow:
+    0 4px 4px rgba(255, 106, 0, 0.25),
+    4px 4px 12px #ff3d00 inset;
+  outline: 2px solid #fff;
+  outline-offset: -3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
