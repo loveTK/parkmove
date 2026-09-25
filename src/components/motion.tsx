@@ -111,12 +111,9 @@ function Char({
   const end = start + 1 / total;
   const opacity = useTransform(progress, [start, end], [0.2, 1]);
   return (
-    <span className="relative inline-block">
-      <span className="opacity-20">{char}</span>
-      <motion.span className="absolute inset-0" style={{ opacity }}>
-        {char}
-      </motion.span>
-    </span>
+    <motion.span className="inline-block" style={{ opacity }}>
+      {char}
+    </motion.span>
   );
 }
 
@@ -127,7 +124,7 @@ export function AnimatedText({ text, className }: { text: string; className?: st
   let i = 0;
   const total = text.length;
   return (
-    <p ref={ref} className={className} aria-label={text}>
+    <p ref={ref} className={className}>
       {words.map((word, wi) => {
         const chars = Array.from(word).map((c) => {
           const idx = i++;
@@ -135,7 +132,7 @@ export function AnimatedText({ text, className }: { text: string; className?: st
         });
         i++;
         return (
-          <span key={wi} className="inline-block whitespace-nowrap" aria-hidden>
+          <span key={wi} className="inline-block whitespace-nowrap">
             {chars}
             {wi < words.length - 1 && <span>&nbsp;</span>}
           </span>
