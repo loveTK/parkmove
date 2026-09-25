@@ -110,7 +110,10 @@ export function QuoteForm() {
             <input type="checkbox" required className="mt-1 size-4 accent-brand" />
             <span>
               견적 안내를 위한 개인정보(연락처, 주소) 수집·이용에 동의합니다. 수집된 정보는 견적 상담 목적으로만 사용되며
-              상담 종료 후 파기됩니다.
+              상담 종료 후 파기됩니다.{" "}
+              <a href="/privacy/" target="_blank" rel="noopener" className="underline hover:text-white">
+                개인정보처리방침 보기
+              </a>
             </span>
           </label>
 

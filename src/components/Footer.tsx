@@ -30,8 +30,9 @@ export function Footer() {
       <p className="mx-auto mt-10 max-w-5xl text-xs leading-relaxed text-mist/35">
         서비스 지역: {districts.map((d) => `부산 ${d}`).join(" · ")} 및 경남 인근
       </p>
-      <p className="mx-auto mt-4 max-w-5xl text-xs text-mist/35">
-        © {new Date().getFullYear()} {site.legalName}. All rights reserved.
+      <p className="mx-auto mt-4 flex max-w-5xl flex-wrap gap-x-4 text-xs text-mist/35">
+        <span>© {new Date().getFullYear()} {site.legalName}. All rights reserved.</span>
+        <a href="/privacy/" className="font-semibold text-mist/60 hover:text-white">개인정보처리방침</a>
       </p>
     </footer>
   );
