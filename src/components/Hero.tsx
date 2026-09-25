@@ -1,7 +1,6 @@
 "use client";
 
 import { CallButton, QuoteButton } from "@/components/Buttons";
-import { HeroTruck } from "@/components/HeroTruck";
 import { Logo } from "@/components/Logo";
 import { FadeIn, Magnet } from "@/components/motion";
 import { nav, site } from "@/lib/site";
@@ -52,7 +51,14 @@ export function Hero() {
           className="pointer-events-none z-10 flex w-full justify-center sm:absolute sm:inset-x-0 sm:bottom-0"
         >
           <Magnet className="pointer-events-auto w-[320px] sm:w-[400px] md:w-[500px] lg:w-[580px]">
-            <HeroTruck className="h-auto w-full drop-shadow-[0_30px_60px_rgba(215,226,234,0.18)]" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/truck-hero.png"
+              alt="박기사 용달 트럭"
+              width={718}
+              height={525}
+              className="h-auto w-full drop-shadow-[0_30px_60px_rgba(215,226,234,0.18)]"
+            />
           </Magnet>
         </FadeIn>
 
