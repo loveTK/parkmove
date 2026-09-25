@@ -37,7 +37,17 @@ function Card({ index, total, title, desc }: { index: number; total: number; tit
           </div>
         </div>
         <p className="mt-6 max-w-3xl text-[clamp(1rem,1.8vw,1.35rem)] leading-relaxed text-mist/80 sm:mt-8">{desc}</p>
-        <div className="mt-8 h-[clamp(120px,18vw,240px)] rounded-[30px] bg-gradient-to-br from-brand/20 via-white/[0.03] to-transparent sm:rounded-[40px]" />
+        <div className="relative mt-8 flex h-[clamp(120px,18vw,240px)] items-center justify-center overflow-hidden rounded-[30px] border border-mist/10 bg-white/[0.02] sm:rounded-[40px]">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "repeating-linear-gradient(135deg, rgba(215,226,234,0.08) 0px, rgba(215,226,234,0.08) 1px, transparent 1px, transparent 18px)",
+            }}
+          />
+          <Icon className="absolute size-32 text-mist/[0.07] sm:size-44 md:size-56" strokeWidth={0.75} />
+          <Icon className="relative size-14 text-mist sm:size-16 md:size-20" strokeWidth={1.25} />
+        </div>
       </motion.article>
     </div>
   );
