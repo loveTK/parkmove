@@ -16,7 +16,10 @@ export const metadata: Metadata = {
     "부산진구 용달", "해운대 원룸이사", "부산대 이사", "동아대 이사", "박기사 용달", "박기사",
     "부산 바이크 용달", "부산 오토바이 운송", "부산 오토바이 탁송", "부산 가구 운반", "부산 냉장고 운반",
   ],
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    types: { "application/rss+xml": "/rss.xml" },
+  },
   openGraph: {
     type: "website",
     locale: "ko_KR",
