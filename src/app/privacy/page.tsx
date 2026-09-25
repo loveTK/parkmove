@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { site } from "@/lib/site";
 
@@ -45,9 +46,9 @@ export default function PrivacyPage() {
   return (
     <main className="min-h-screen bg-ink px-5 py-10 text-mist sm:px-8 md:px-10">
       <div className="mx-auto max-w-2xl">
-        <a href="/" aria-label="박기사 홈으로">
+        <Link href="/" aria-label="박기사 홈으로">
           <Logo />
-        </a>
+        </Link>
         <h1 className="mt-12 text-3xl font-black text-white sm:text-4xl">개인정보처리방침</h1>
         <p className="mt-4 text-sm leading-relaxed text-mist/70">
           {site.legalName}(이하 &quot;회사&quot;)은 개인정보 보호법 제30조에 따라 고객의 개인정보를 보호하고 관련 고충을 신속하게
@@ -63,9 +64,9 @@ export default function PrivacyPage() {
             ))}
           </section>
         ))}
-        <a href="/" className="mt-12 inline-block rounded-full border-2 border-mist px-6 py-3 text-sm font-semibold text-mist hover:bg-mist/10">
+        <Link href="/" className="mt-12 inline-block rounded-full border-2 border-mist px-6 py-3 text-sm font-semibold text-mist hover:bg-mist/10">
           홈으로 돌아가기
-        </a>
+        </Link>
       </div>
     </main>
   );
