@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../node_modules/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; background: #0C0C0C; font-family: "Pretendard Variable", sans-serif; color: #D7E2EA; overflow: hidden; word-break: keep-all; }
+  .wrap { position: relative; width: 1200px; height: 630px; padding: 64px 72px; display: flex; flex-direction: column; justify-content: space-between; }
+  .glow { position: absolute; right: -120px; bottom: -220px; width: 720px; height: 720px; border-radius: 50%; background: radial-gradient(circle, rgba(215,226,234,.22) 0%, rgba(215,226,234,0) 65%); }
+  .brand { display: flex; align-items: center; gap: 18px; }
+  .brand svg { width: 72px; height: 72px; }
+  .brand .name { font-size: 40px; font-weight: 900; color: #fff; letter-spacing: -1px; line-height: 1; }
+  .brand .sub { font-size: 16px; letter-spacing: .25em; color: rgba(215,226,234,.7); margin-top: 8px; }
+  h1 { font-size: 120px; font-weight: 900; line-height: 1.02; letter-spacing: -4px;
+       background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  h1 b { background: linear-gradient(180deg, #FFFFFF 0%, #D7E2EA 60%, #8E9AA4 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .bottom { display: flex; justify-content: space-between; align-items: flex-end; }
+  .desc { font-size: 26px; font-weight: 500; line-height: 1.4; max-width: 720px; }
+  .desc span { color: #FFFFFF; font-weight: 800; }
+  .pill { font-size: 30px; font-weight: 800; color: #0C0C0C; padding: 20px 40px; border-radius: 999px;
+          background: linear-gradient(180deg, #FFFFFF 0%, #E4EBF0 100%); box-shadow: 0 10px 30px rgba(255,255,255,.12); white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="glow"></div>
+  <div class="brand">
+    <svg viewBox="0 0 64 64"><rect x="4" y="16" width="34" height="28" rx="5" fill="#F2F5F7"/><path d="M38 26h10.5a4 4 0 0 1 3.2 1.6l6.5 8.7A4 4 0 0 1 59 38.7V41a3 3 0 0 1-3 3H38V26Z" fill="#8E9AA4"/><path d="M41 29h6.6a2 2 0 0 1 1.6.8l4.6 6.2H41V29Z" fill="#0C0C0C"/><circle cx="17" cy="47" r="7" fill="#D7E2EA"/><circle cx="17" cy="47" r="3" fill="#0C0C0C"/><circle cx="47" cy="47" r="7" fill="#D7E2EA"/><circle cx="47" cy="47" r="3" fill="#0C0C0C"/><path d="M11 24h20M11 30h14" stroke="#0C0C0C" stroke-width="3" stroke-linecap="round" opacity=".8"/></svg>
+    <div><div class="name">박기사</div><div class="sub">부산 용달 · 이사</div></div>
+  </div>
+  <h1>부산 <b>용달·원룸이사</b><br/>30년 경력 박기사</h1>
+  <div class="bottom">
+    <p class="desc">원룸이사 <span>20만원~</span> · 용달 <span>5만원~</span><br/>대학생 이사 · 화물운송 · 폐기물 처리 · 부산 전지역</p>
+    <div class="pill">☎ 010-2868-0112</div>
+  </div>
+</div>
+</body>
+</html>
