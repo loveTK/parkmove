@@ -4,8 +4,8 @@
 @theme {
   --color-ink: #0c0c0c;
   --color-mist: #d7e2ea;
-  --color-brand: #ff7a00;
-  --color-brand-deep: #ff3d00;
+  --color-brand: #f2f5f7;
+  --color-brand-deep: #8e9aa4;
   --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
     system-ui, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 .brand-heading {
-  background: linear-gradient(180deg, #ffb35c 0%, #ff7a00 55%, #ff3d00 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #d7e2ea 60%, #8e9aa4 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -40,12 +40,11 @@ body {
 }
 
 .cta-gradient {
-  background: linear-gradient(123deg, #1f0a00 7%, #ff6a00 37%, #ff3d00 72%, #ffb000 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #e4ebf0 100%);
+  color: #0c0c0c;
   box-shadow:
-    0 4px 4px rgba(255, 106, 0, 0.25),
-    4px 4px 12px #ff3d00 inset;
-  outline: 2px solid #fff;
-  outline-offset: -3px;
+    0 10px 30px rgba(255, 255, 255, 0.12),
+    0 1px 0 rgba(255, 255, 255, 0.6) inset;
 }
 
 @media (prefers-reduced-motion: reduce) {

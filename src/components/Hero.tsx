@@ -52,7 +52,7 @@ export function Hero() {
           className="pointer-events-none z-10 flex w-full justify-center sm:absolute sm:inset-x-0 sm:bottom-0"
         >
           <Magnet className="pointer-events-auto w-[320px] sm:w-[400px] md:w-[500px] lg:w-[580px]">
-            <HeroTruck className="h-auto w-full drop-shadow-[0_30px_60px_rgba(255,122,0,0.25)]" />
+            <HeroTruck className="h-auto w-full drop-shadow-[0_30px_60px_rgba(215,226,234,0.18)]" />
           </Magnet>
         </FadeIn>
 

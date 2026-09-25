@@ -35,7 +35,7 @@ export function Services() {
               <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
                 <h3 className="text-[clamp(1.25rem,2.4vw,2.1rem)] font-bold leading-tight">{s.name}</h3>
                 <div className="text-right">
-                  <span className="brand-heading text-[clamp(1.35rem,2.6vw,2.2rem)] font-black leading-none tracking-tight">
+                  <span className="text-[clamp(1.35rem,2.6vw,2.2rem)] font-black leading-none tracking-tight text-ink">
                     {s.price}
                   </span>
                   {s.priceNote && <div className="text-xs text-ink/50">{s.priceNote}</div>}

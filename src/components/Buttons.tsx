@@ -8,7 +8,7 @@ export function CallButton({ className = "", label = "전화 연결" }: { classN
   return (
     <a
       href={site.phoneHref}
-      className={`${base} cta-gradient text-white px-7 py-3 sm:px-9 sm:py-3.5 md:px-11 md:py-4 text-sm sm:text-base hover:scale-[1.03] ${className}`}
+      className={`${base} cta-gradient text-ink px-7 py-3 sm:px-9 sm:py-3.5 md:px-11 md:py-4 text-sm sm:text-base hover:scale-[1.03] ${className}`}
       aria-label={`${label} ${site.phone}`}
     >
       <Phone className="size-4 sm:size-5" strokeWidth={2.5} />

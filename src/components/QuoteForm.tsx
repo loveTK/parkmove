@@ -117,7 +117,7 @@ export function QuoteForm() {
           <div className="mt-2 flex flex-col gap-3 sm:flex-row">
             <button
               type="submit"
-              className="cta-gradient inline-flex flex-1 items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-semibold text-white transition-transform hover:scale-[1.02] active:scale-95"
+              className="cta-gradient inline-flex flex-1 items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-semibold text-ink transition-transform hover:scale-[1.02] active:scale-95"
             >
               <MessageSquareText className="size-5" strokeWidth={2.5} />
               문자로 견적 보내기

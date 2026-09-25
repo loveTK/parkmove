@@ -9,16 +9,16 @@ export function HeroTruck({ className = "" }: { className?: string }) {
     >
       <defs>
         <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#FFA24A" />
-          <stop offset="1" stopColor="#FF6A00" />
+          <stop offset="0" stopColor="#FFFFFF" />
+          <stop offset="1" stopColor="#C9D3DA" />
         </linearGradient>
         <linearGradient id="cab" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#FF8A1F" />
-          <stop offset="1" stopColor="#E85400" />
+          <stop offset="0" stopColor="#8E9AA4" />
+          <stop offset="1" stopColor="#5C6770" />
         </linearGradient>
         <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-          <stop offset="0" stopColor="#FF7A00" stopOpacity=".35" />
-          <stop offset="1" stopColor="#FF7A00" stopOpacity="0" />
+          <stop offset="0" stopColor="#D7E2EA" stopOpacity=".22" />
+          <stop offset="1" stopColor="#D7E2EA" stopOpacity="0" />
         </radialGradient>
       </defs>
 
@@ -26,8 +26,7 @@ export function HeroTruck({ className = "" }: { className?: string }) {
 
       {/* cargo box */}
       <rect x="30" y="60" width="300" height="160" rx="16" fill="url(#box)" />
-      <rect x="30" y="60" width="300" height="160" rx="16" stroke="#fff" strokeOpacity=".25" strokeWidth="2" />
-      <rect x="46" y="76" width="268" height="128" rx="10" stroke="#fff" strokeOpacity=".2" strokeWidth="2" strokeDasharray="6 8" />
+      <rect x="46" y="76" width="268" height="128" rx="10" stroke="#0C0C0C" strokeOpacity=".18" strokeWidth="2" strokeDasharray="6 8" />
       <text
         x="180"
         y="152"
@@ -35,7 +34,7 @@ export function HeroTruck({ className = "" }: { className?: string }) {
         fontFamily="inherit"
         fontWeight="900"
         fontSize="64"
-        fill="#fff"
+        fill="#0C0C0C"
         letterSpacing="-2"
       >
         박기사
@@ -47,8 +46,8 @@ export function HeroTruck({ className = "" }: { className?: string }) {
         fontFamily="inherit"
         fontWeight="600"
         fontSize="18"
-        fill="#fff"
-        fillOpacity=".85"
+        fill="#0C0C0C"
+        fillOpacity=".7"
         letterSpacing="4"
       >
         부산 용달 · 이사 · 화물 · 폐기물
@@ -64,8 +63,8 @@ export function HeroTruck({ className = "" }: { className?: string }) {
       />
       <path d="M346 112h52a10 10 0 0 1 8 4l34 46H346v-50Z" fill="#0C0C0C" />
       <path d="M352 118h44a6 6 0 0 1 5 2.5L428 156h-76v-38Z" fill="#1c2733" />
-      <rect x="440" y="166" width="24" height="8" rx="3" fill="#fff" opacity=".6" />
-      <rect x="456" y="192" width="20" height="10" rx="3" fill="#FFE07A" />
+      <rect x="440" y="166" width="24" height="8" rx="3" fill="#fff" opacity=".7" />
+      <rect x="456" y="192" width="20" height="10" rx="3" fill="#FFFFFF" />
       <rect x="336" y="170" width="12" height="30" rx="3" fill="#0C0C0C" opacity=".4" />
 
       {/* bumper */}
