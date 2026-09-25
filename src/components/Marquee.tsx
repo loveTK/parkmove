@@ -1,10 +1,10 @@
 "use client";
 
-import { Box, GraduationCap, MapPin, Recycle, Truck } from "lucide-react";
+import { Bike, Box, GraduationCap, MapPin, Recycle, Truck } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { marqueeRowA, marqueeRowB } from "@/lib/site";
 
-const icons = [Truck, GraduationCap, Box, Recycle];
+const icons = [Truck, GraduationCap, Box, Bike, Recycle];
 
 function Tile({ label, i, accent }: { label: string; i: number; accent?: boolean }) {
   const Icon = accent ? MapPin : icons[i % icons.length];
